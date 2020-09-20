@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <title>AntBuster</title>
+      <meta charset="utf-8">
+      <link rel="Shortcut Icon" type="image/x-icon" href="icon/icon.ico">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="libraries/p5.js" type="text/javascript"></script>
+
+      <script src="libraries/p5.dom.js" type="text/javascript"></script>
+      <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+      <script src="js/json.js" type="text/javascript"></script>
+      <script src="js/tank.js" type="text/javascript"></script>
+      <script src="js/ant.js" type="text/javascript"></script>
+      <script src="js/select.js" type="text/javascript"></script>
+      <script src="js/cake.js" type="text/javascript"></script>
+
+      <script src="js/bullet.js" type="text/javascript"></script>
+      <script src="js/sketch.js" type="text/javascript"></script>
+      <script src="js/panel.js" type="text/javascript"></script>
+
+
+
+
+      <!--<script src="js/key.js" type="text/javascript"></script>-->
+
+
+
+
+
+    </head>
+    <div class="container-fluid">
+      <!--id = "sketch-holder" Mobile上各自一列， Tablet上兩欄比例各半、Desktop上兩欄比例為3:2  -->
+      <div class="row">
+        <div class="col-md-12">AnsBuster</div>
+      </div>
+      <div class="row">
+        <div class="col-md-8" id = "sketch-holder"></div>
+        <div class="col-md-2 col-md-offset-1" style="border-style: inset;">
+          <div class="col-md-12" >
+            <div>FPS : <span id = "fps"></span></div></p>
+
+            Point : <span id = "Point"></span></p>
+            AntLevel : <span id = "level"></span></p>
+            coin : <span id = "money"></span></div></p>
+
+          </div>
+          <!-- grid -->
+          <div class="clearfix visible-xs-block"></div>
+
+          <div class="col-md-3 col-md-offset-1">
+            </p></p></p>
+            <button onclick="setTank()" class = "btn btn-danger" id = "newtank">SetTank</button></p>
+            <!-- <img src="img/tank.jpg" style="width:80px;height:80px"> -->
+            <!-- <input type="button" class = "btn btn-danger" style="width:80px;height:80px;" onclick="setTank()" id = "newtank"> -->
+            <!-- <img src="img/tank.jpg" style="width:80px;height:80px"> -->
+            <!-- <button type="button" class="btn btn-outline-success">Primary</button> -->
+            <!-- <button onclick="setants()" >SetAnt</button> -->
+            <!-- <button onclick="upgrade()" >Upgrade</button></p> -->
+          </div>
+
+          <div class="col-md-3 col-md-offset-1" id = "upgrade">
+            <!-- <div class="container" ></div> -->
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            </p></p></p>
+            <span id = "object"></span></p>
+            BGM Volumn
+            <input type="range" min="0" max="100" value="50" style="width: 50%;" oninput="volumeControl(this.value);">
+            <!-- <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button> -->
+          </div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+  <!-- <body>
+  </body> -->
+</html>
